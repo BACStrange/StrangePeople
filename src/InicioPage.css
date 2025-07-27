@@ -1,0 +1,78 @@
+.inicio-page {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../img/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 2rem;
+}
+
+  
+
+.pagina-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.barra-postagem {
+  background: white;
+  padding: 1rem;
+  width: 600px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: black;
+}
+
+.formulario-postagem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-campo {
+  width: 96%;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.container-postagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.postagem {
+  width: 600px;
+  min-height: 50px;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.data {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}

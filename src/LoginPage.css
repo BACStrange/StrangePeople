@@ -1,0 +1,141 @@
+/* Fundo roxo escuro */
+.login-page {
+  position: fixed; /* impede rolagem e mantém full screen */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  background-image: url("../img/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título dourado */
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo p {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0%; /* abaixo da logo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFD700; /* cor do triângulo */
+  z-index: 0;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Cartão de login */
+.cartao {
+  background: #1e1e2faf;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.cartao:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.cartao.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Título */
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Campos de input */
+.input-campo {
+  width: 92%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #2e2e42;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-campo::placeholder {
+  color: #aaa;
+}
+
+.input-campo:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Botão de login */
+.botao {
+  width: 102%;
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #ffcc00, #ffaa00);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background: linear-gradient(90deg, #ffaa00, #ff9900);
+}
+
+/* Link de cadastro */
+.link-texto {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.link-texto a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-texto a:hover {
+  text-decoration: underline;
+}
